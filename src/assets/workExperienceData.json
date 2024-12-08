@@ -1,0 +1,29 @@
+[
+    {
+        "companyName": "Cognizant",
+        "position": "Programmer Analyst",
+        "startDate": "5th Sept 2022",
+        "endDate": "Present",
+        "enhancements": [
+            "Migrated UI application to Angular and backend spring application to spring boot",
+            "Contenerized both UI and backend application applications",
+            "Created CI/CD pipeline",
+            "Moved applications from onpremises server to Azure AKS",
+            "Enhanced and optimized application performance by using reactive programming",
+            "Designed and developed automated solutions for client"
+        ]
+    },
+    {
+        "companyName": "Capgemini",
+        "position": "Senior Analyst",
+        "startDate": "13th Feb 2020",
+        "endDate": "29th Aug 2022",
+        "enhancements": [
+            "Developed and designed crucial features for the automobile application and automated few manual processes",
+            "Participated in pre-development technical design reviews, pair programming, and testing best practices",
+            "Significantly helped the team with enhancing the code standard",
+            "Followed coding best practices",
+            "Automated CI/CD"
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+
+.about-me-container {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .about-me-header {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .social-links .btn {
+    margin-right: 10px;
+  }
+  

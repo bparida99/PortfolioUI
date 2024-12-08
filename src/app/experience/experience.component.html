@@ -1,0 +1,27 @@
+<div class="container my-5">
+    <h2 class="text-primary mb-4 text-center">Professional Experience</h2>
+    <div class="row">
+      <div *ngFor="let item of data" class="col-md-6 mb-4">
+        <div class="card shadow-sm border-primary h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary d-flex align-items-center justify-content-between">
+              <i class="bi bi-briefcase-fill me-2"></i>
+              {{ item.position }}
+            </h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+              <span>{{ item.companyName }}</span><br>
+              <small>{{ item.startDate }} – {{ item.endDate }}</small>
+            </h6>
+            <hr>
+            <ul class="list-unstyled">
+              <li *ngFor="let enhancement of item.enhancements" class="mb-2 enhancement-item">
+                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                {{ enhancement }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

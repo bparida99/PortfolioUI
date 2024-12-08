@@ -1,0 +1,41 @@
+
+h2.text-center {
+    text-align: center;
+  }
+  
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .enhancement-item {
+    position: relative;
+    padding-left: 30px; 
+  }
+  
+  .enhancement-item::before {
+    content: "\2022"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #007bff; 
+  }
+  
+  .enhancement-item + .enhancement-item {
+    margin-top: 10px;
+  }
+  
+  .enhancement-item:hover {
+    background-color: #f1f1f1; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
