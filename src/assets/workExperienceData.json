@@ -10,7 +10,8 @@
             "Created CI/CD pipeline",
             "Moved applications from onpremises server to Azure AKS",
             "Enhanced and optimized application performance by using reactive programming",
-            "Designed and developed automated solutions for client"
+            "Designed and developed automated solutions for client",
+            "Implemented security using Azure AD"
         ]
     },
     {
