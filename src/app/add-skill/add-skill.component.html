@@ -1,0 +1,23 @@
+<div style="text-align:center">
+    <h1>Add New Skill</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="skillName">Skill Name:</label>
+        <input id="skillName" formControlName="skillName" />
+        <div *ngIf="form.get('skillName')?.touched && form.get('skillName')?.invalid">
+          <small *ngIf="form.get('skillName')?.hasError('required')">Skill Name is required.</small>
+          <small *ngIf="form.get('skillName')?.hasError('minlength')">Skill Name must be at least 3 characters long.</small>
+        </div>
+      </div>
+      <div>
+        <label for="skillType">Skill Type:</label>
+        <input id="skillType" formControlName="skillType" />
+        <div *ngIf="form.get('skillType')?.touched && form.get('skillType')?.invalid">
+          <small *ngIf="form.get('skillType')?.hasError('required')">Skill Type is required.</small>
+          <small *ngIf="form.get('skillType')?.hasError('minlength')">Skill Type must be at least 3 characters long.</small>
+        </div>
+      </div>
+      <button type="submit" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
+  

@@ -10,6 +10,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { EducationComponent } from './education/education.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddSkillComponent } from './add-skill/add-skill.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     ExperienceComponent,
     SkillsComponent,
     CertificationsComponent,
-    EducationComponent
+    EducationComponent,
+    AddSkillComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
