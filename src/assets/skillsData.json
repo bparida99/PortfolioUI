@@ -1,0 +1,110 @@
+[
+    {
+      "skill": "Cloud Computing",
+      "details": "Azure & AWS",
+      "proficiency": "Proficient",
+      "progress": 85
+    },
+    {
+      "skill": "Containerization & Orchestration",
+      "details": "Docker & Kubernetes",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "CI/CD Tools",
+      "details": "Jenkins & GitHub Actions",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "Programming Languages",
+      "details": "Java (V:17)",
+      "proficiency": "Proficient",
+      "progress": 90
+    },
+    {
+      "skill": "Backend-Framework and architecture",
+      "details": "Springboot rest api, GraphQL & Micro-Service",
+      "proficiency": "Proficient",
+      "progress": 90
+    },
+    {
+      "skill": "Messaging Systems",
+      "details": "Kafka",
+      "proficiency": "Proficient",
+      "progress": 75
+    },
+    {
+      "skill": "Security Principles",
+      "details": "SSL, Spring JWT & Azure AD",
+      "proficiency": "Proficient",
+      "progress": 70
+    },
+    {
+      "skill": "DB migration tool",
+      "details": "Fly-way",
+      "proficiency": "Proficient",
+      "progress": 70
+    },
+    {
+      "skill": "Database Management",
+      "details": "Db2 SQL & MySQL",
+      "proficiency": "Proficient",
+      "progress": 85
+    },
+    {
+      "skill": "UI-Framework",
+      "details": "Angular",
+      "proficiency": "Knowledgeable",
+      "progress": 60
+    },
+    {
+      "skill": "Web Development",
+      "details": "HTML, CSS, JavaScript & Type Script",
+      "proficiency": "Knowledgeable",
+      "progress": 60
+    },
+    {
+      "skill": "IDE",
+      "details": "IntelliJ IDEA, Eclipse, STS, VS Code",
+      "proficiency": "Proficient",
+      "progress": 85
+    },
+    {
+      "skill": "Software Development Life Cycle (SDLC)",
+      "details": "Agile & SCRUM",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "Management Tools",
+      "details": "Jira & Confluence",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "Version Control",
+      "details": "Git",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "Testing and Debugging",
+      "details": "Unit Testing & Integration Testing",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "AI Tools",
+      "details": "Github Co-Pilot",
+      "proficiency": "Proficient",
+      "progress": 80
+    },
+    {
+      "skill": "OS",
+      "details": "Windows & Linux",
+      "proficiency": "Proficient",
+      "progress": 80
+    }
+  ]

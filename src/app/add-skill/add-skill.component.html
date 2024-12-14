@@ -2,19 +2,28 @@
     <h1>Add New Skill</h1>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div>
-        <label for="skillName">Skill Name:</label>
-        <input id="skillName" formControlName="skillName" />
-        <div *ngIf="form.get('skillName')?.touched && form.get('skillName')?.invalid">
-          <small *ngIf="form.get('skillName')?.hasError('required')">Skill Name is required.</small>
-          <small *ngIf="form.get('skillName')?.hasError('minlength')">Skill Name must be at least 3 characters long.</small>
+        <label for="skill">Skill Name:</label>
+        <input id="skill" formControlName="skill" />
+        <div *ngIf="form.get('skill')?.touched && form.get('skill')?.invalid">
+          <small *ngIf="form.get('skill')?.hasError('required')">Skill Name is required.</small>
+          <small *ngIf="form.get('skill')?.hasError('minlength')">Skill Name must be at least 3 characters long.</small>
         </div>
       </div>
       <div>
-        <label for="skillType">Skill Type:</label>
-        <input id="skillType" formControlName="skillType" />
-        <div *ngIf="form.get('skillType')?.touched && form.get('skillType')?.invalid">
-          <small *ngIf="form.get('skillType')?.hasError('required')">Skill Type is required.</small>
-          <small *ngIf="form.get('skillType')?.hasError('minlength')">Skill Type must be at least 3 characters long.</small>
+        <label for="details">Skill Type:</label>
+        <input id="details" formControlName="details" />
+        <div *ngIf="form.get('details')?.touched && form.get('details')?.invalid">
+          <small *ngIf="form.get('details')?.hasError('required')">Skill Type is required.</small>
+          <small *ngIf="form.get('details')?.hasError('minlength')">Skill Type must be at least 3 characters long.</small>
+        </div>
+      </div>
+      <div>
+        <label for="progress">Proficiency:</label>
+        <input id="progress" formControlName="progress" />
+        <div *ngIf="form.get('progress')?.touched && form.get('progress')?.invalid">
+          <small *ngIf="form.get('progress')?.hasError('required')">Proficiency is required.</small>
+          <small *ngIf="form.get('progress')?.hasError('min')">Minimum Proficiency Should Be 1</small>
+          <small *ngIf="form.get('progress')?.hasError('max')">Maximum Proficiency Should Be 100</small>
         </div>
       </div>
       <button type="submit" [disabled]="form.invalid">Submit</button>
