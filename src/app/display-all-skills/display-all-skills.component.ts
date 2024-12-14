@@ -15,6 +15,6 @@ export class DisplayAllSkillsComponent {
   ngOnInit(): void {
     this.service.getAllSkills().subscribe((response) => {
       this.skills = response;
-      this.service.allSkills.push(this.skills)} ); 
+      } ); 
   }
 }
