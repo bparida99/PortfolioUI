@@ -2,7 +2,7 @@
 .skills-section {
     background-color: #f4f8fb; /* Light blue background */
     padding: 30px 20px;
-    border-top: 5px solid #007bff; /* Blue border */
+    /*border-top: 5px solid #007bff;  Blue border */
   }
   
   .section-title {
@@ -107,7 +107,7 @@
     }
   }
   
-  h3 {
+  .text-danger{
     display: flex;
     justify-content: center; 
     height: 100vh;
