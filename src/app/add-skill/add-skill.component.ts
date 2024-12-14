@@ -36,8 +36,11 @@ export class AddSkillComponent {
       if(this.skillData.progress>=70){
         this.skillData.proficiency = 'Proficient'
       }
-      this.service.addSkill(this.skillData)
-      this.goToSkillsPage(); 
+      this.service.addSkill(this.skillData).subscribe((data: any)=>{
+        console.log(data);
+        this.goToSkillsPage(); 
+      });
+      
     } else {
       console.log('Form is not valid');
     }

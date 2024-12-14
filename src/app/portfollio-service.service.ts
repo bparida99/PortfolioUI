@@ -12,8 +12,10 @@ export class PortfollioServiceService {
 
   allSkills:any =  [] ;
 
-  addSkill(skill:any):void { 
-      this.allSkills.push(skill)
+  addSkill(skill:any):any { 
+      //this.allSkills.push(skill)
+    return this.http.post<any>('http://localhost:8080/portfolio/addSkill', skill);
+
   }
 
   getExperienceData(): Observable<Experience[]> {
@@ -25,7 +27,8 @@ export class PortfollioServiceService {
   }
 
   getAllSkills(): Observable<any[]> {
-    return this.http.get<any[]>('/assets/skillsData.json'); 
+    //return this.http.get<any[]>('/assets/skillsData.json'); 
+    return this.http.get<any[]>('http://localhost:8080/portfolio/getAllSkills');
   }
 
   getEducationData(): Observable<any[]> {
