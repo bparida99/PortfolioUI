@@ -15,6 +15,9 @@ export class AddSkillComponent {
   skillData:any = {};
   proficiency:any="";
 
+  errorOccured:boolean = false;
+  errorMsg:string = ''
+
   constructor(private fb: FormBuilder, 
     private service: PortfollioServiceService,private router: Router) {
     this.form = this.fb.group({
@@ -37,8 +40,10 @@ export class AddSkillComponent {
         this.skillData.proficiency = 'Proficient'
       }
       this.service.addSkill(this.skillData).subscribe((data: any)=>{
-        console.log(data);
         this.goToSkillsPage(); 
+      }, ()=>{
+        this.errorOccured = true;
+        this.errorMsg = 'Unable to add skill at this time, please try again later.';
       });
       
     } else {

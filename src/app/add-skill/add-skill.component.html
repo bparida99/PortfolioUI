@@ -29,4 +29,9 @@
       <button type="submit" [disabled]="form.invalid">Submit</button>
     </form>
   </div>
+  <div *ngIf="errorOccured">
+  <div #skillsNotAvailable>
+    <h3 class="text-danger" #error>{{errorMsg}} <a routerLink="/technical-skills">Move to skills page</a></h3>
+  </div>
+  </div>
   
