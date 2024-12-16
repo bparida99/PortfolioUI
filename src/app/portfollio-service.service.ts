@@ -11,10 +11,11 @@ export class PortfollioServiceService {
   constructor(private http: HttpClient) { }
 
   allSkills:any =  [] ;
+  baseUrl:any = 'http://localhost:8080/portfolio'
 
   addSkill(skill:any):any { 
       //this.allSkills.push(skill)
-    return this.http.post<any>('http://localhost:8080/portfolio/addSkill', skill);
+    return this.http.post<any>(this.baseUrl+'/addSkill', skill);
 
   }
 
@@ -28,7 +29,7 @@ export class PortfollioServiceService {
 
   getAllSkills(): Observable<any[]> {
     //return this.http.get<any[]>('/assets/skillsData.json'); 
-    return this.http.get<any[]>('http://localhost:8080/portfolio/getAllSkills');
+    return this.http.get<any[]>(this.baseUrl+'/getAllSkills');
   }
 
   getEducationData(): Observable<any[]> {
