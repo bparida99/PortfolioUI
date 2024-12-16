@@ -2,7 +2,7 @@
     <h1>Add New Skill</h1>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div>
-        <label for="skill">Skill Name:</label>
+        <label for="skill">Skill Type:</label>
         <input id="skill" formControlName="skill" />
         <div *ngIf="form.get('skill')?.touched && form.get('skill')?.invalid">
           <small *ngIf="form.get('skill')?.hasError('required')">Skill Name is required.</small>
@@ -10,7 +10,7 @@
         </div>
       </div>
       <div>
-        <label for="details">Skill Type:</label>
+        <label for="details">Skill Name:</label>
         <input id="details" formControlName="details" />
         <div *ngIf="form.get('details')?.touched && form.get('details')?.invalid">
           <small *ngIf="form.get('details')?.hasError('required')">Skill Type is required.</small>
