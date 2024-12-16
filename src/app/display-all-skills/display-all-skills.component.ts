@@ -8,13 +8,20 @@ import { PortfollioServiceService } from '../portfollio-service.service';
 })
 export class DisplayAllSkillsComponent {
 
-  skills:any = []  ;
-
+  skills:any = [];
+  
+  errorMsg:string = '';
   constructor(private service: PortfollioServiceService ) {}
 
   ngOnInit(): void {
     this.service.getAllSkills().subscribe((response) => {
       this.skills = response;
-      } ); 
+      if(this.skills.length == 0) {
+        this.errorMsg = 'No skills found'
+      }
+      },
+    error=>{
+      this.errorMsg = 'Unable to fetch skills'
+    } ); 
   }
 }
