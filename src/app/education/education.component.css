@@ -1,14 +1,8 @@
 /* education.component.css */
-.section {
-    padding: 20px;
+  .example-card {
+    max-width: 500px;
   }
   
-  .card-body {
-    padding: 15px;
+  h2{
+    font-size: 30px;
   }
-  
-  .edu-institution {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
