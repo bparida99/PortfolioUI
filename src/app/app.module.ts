@@ -15,6 +15,11 @@ import { AddSkillComponent } from './add-skill/add-skill.component';
 import { DisplayAllSkillsComponent } from './display-all-skills/display-all-skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { FlexModule } from '@angular/flex-layout';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import {MatCardModule} from '@angular/material/card';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    FlexModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

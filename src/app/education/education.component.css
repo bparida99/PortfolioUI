@@ -1,8 +1,21 @@
 /* education.component.css */
-  .example-card {
+  .section{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+.education-card {
     max-width: 500px;
   }
   
   h2{
     font-size: 30px;
+  }
+
+  mat-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  mat-card{
+    transition: transform .2s;
   }
