@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experience } from './models/experience';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class PortfollioServiceService {
   constructor(private http: HttpClient) { }
 
   allSkills:any =  [] ;
-  baseUrl:any = 'http://localhost:8080/portfolio'
+  baseUrl:any = environment.apiUrl
 
   addSkill(skill:any):any { 
       //this.allSkills.push(skill)
