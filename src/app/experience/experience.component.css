@@ -39,3 +39,10 @@ h2.text-center {
     transition: background-color 0.3s ease;
   }
   
+  .card-subtitle{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .card-title{
+    font-size: 20px;
+  }
