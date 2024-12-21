@@ -1,10 +1,13 @@
 <div class="skills-section">
     <h2 class="section-title">Technical Skills</h2>
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search skill">
+    </mat-form-field>
     <div class="skills-container" *ngIf="skills.length; else skillsNotAvailable">
-      <div class="skill-card" *ngFor="let skill of skills">
+      <div class="skill-card" *ngFor="let skill of filteredSkills">
         <span class="proficiency-label">{{ skill.proficiency }}</span>
-        <h3>{{ skill.details }}</h3>
-        <p>{{ skill.skill }}</p>
+        <h3>{{ skill.skill }}</h3>
+        <p>{{ skill.details }}</p>
         <div class="progress-container">
           <div class="progress-bar">
             <div
