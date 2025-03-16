@@ -29,8 +29,8 @@ export class PortfollioServiceService {
   }
 
   getAllSkills(): Observable<any[]> {
-    //return this.http.get<any[]>('/assets/skillsData.json'); 
-    return this.http.get<any[]>(this.baseUrl+'/getAllSkills');
+    return this.http.get<any[]>('/assets/skillsData.json'); 
+   // return this.http.get<any[]>(this.baseUrl+'/getAllSkills');
   }
 
   getEducationData(): Observable<any[]> {

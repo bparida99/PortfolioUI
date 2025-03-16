@@ -1,9 +1,17 @@
 [
     {
+        "companyName": "Epam System",
+        "position": "Software Engineer",
+        "startDate": "6th Mar 2025",
+        "endDate": "Present",
+        "enhancements": [
+        ]
+    },
+    {
         "companyName": "Cognizant",
         "position": "Programmer Analyst",
         "startDate": "5th Sept 2022",
-        "endDate": "Present",
+        "endDate": "3rd Mar 2025",
         "enhancements": [
             "Migrated UI application to Angular and backend spring application to spring boot",
             "Contenerized both UI and backend application applications",
