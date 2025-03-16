@@ -1,14 +1,21 @@
 /* education.component.css */
-.section {
-    padding: 20px;
+  .section{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+.education-card {
+    max-width: 500px;
   }
   
-  .card-body {
-    padding: 15px;
+  h2{
+    font-size: 30px;
   }
-  
-  .edu-institution {
-    font-size: 1.2rem;
-    color: #555;
+
+  mat-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
   }
-  
+
+  mat-card{
+    transition: transform .2s;
+  }

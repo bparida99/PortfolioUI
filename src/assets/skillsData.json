@@ -25,9 +25,15 @@
     },
     {
       "skill": "Backend-Framework and architecture",
-      "details": "Springboot rest api, GraphQL & Micro-Service",
+      "details": "Springboot rest api, Spring WebFlux & Micro-Service",
       "proficiency": "Proficient",
       "progress": 90
+    },
+	{
+      "skill": "Protocols",
+      "details": "REST, GraphQL, Model Context Protocol",
+      "proficiency": "Proficient",
+      "progress": 80
     },
     {
       "skill": "Messaging Systems",
@@ -57,13 +63,13 @@
       "skill": "UI-Framework",
       "details": "Angular",
       "proficiency": "Knowledgeable",
-      "progress": 60
+      "progress": 70
     },
     {
       "skill": "Web Development",
       "details": "HTML, CSS, JavaScript & Type Script",
       "proficiency": "Knowledgeable",
-      "progress": 60
+      "progress": 70
     },
     {
       "skill": "IDE",
@@ -94,6 +100,18 @@
       "details": "Unit Testing & Integration Testing",
       "proficiency": "Proficient",
       "progress": 80
+    },
+    {
+      "skill": "AI Development & Integration",
+      "details": "Knowledge in designing and implementing RESTful APIs for seamless AI model integration using Spring AI framework",
+      "proficiency": "Knowledgeable",
+      "progress": 60
+    },
+	{
+      "skill": "LLM",
+      "details": "LLaMA-3.2",
+      "proficiency": "Knowledgeable",
+      "progress": 60
     },
     {
       "skill": "AI Tools",

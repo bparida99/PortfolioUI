@@ -1,10 +1,21 @@
 <div class="skills-section">
     <h2 class="section-title">Technical Skills</h2>
+    <div class="sort-radio-buttons">
+      <mat-form-field class="sort-drop-down" style="width: 300px;">
+        <mat-select (selectionChange)="sortSkills($event.value)" placeholder="Sort Skills By Proficiency Level">
+          <mat-option value="ProficiencyLowToHigh">Low to high</mat-option>
+          <mat-option value="ProficiencyHighToLow">High to Low</mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+    <mat-form-field style="width: 300px;">
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search skill">
+    </mat-form-field>
     <div class="skills-container" *ngIf="skills.length; else skillsNotAvailable">
-      <div class="skill-card" *ngFor="let skill of skills">
+      <div class="skill-card" *ngFor="let skill of filteredSkills">
         <span class="proficiency-label">{{ skill.proficiency }}</span>
-        <h3>{{ skill.details }}</h3>
-        <p>{{ skill.skill }}</p>
+        <h3>{{ skill.skill }}</h3>
+        <p>{{ skill.details }}</p>
         <div class="progress-container">
           <div class="progress-bar">
             <div
