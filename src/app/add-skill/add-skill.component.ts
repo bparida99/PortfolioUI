@@ -30,15 +30,7 @@ export class AddSkillComponent {
   onSubmit() {
     if (this.form.valid) {
       this.skillData  = this.form.value;
-      if(this.skillData.progress>1 && this.skillData.progress<50){
-        this.skillData.proficiency = 'Beginner'
-      }
-      if(this.skillData.progress>=50 && this.skillData.progress<70){
-        this.skillData.proficiency = 'Knowledgeable'
-      }
-      if(this.skillData.progress>=70){
-        this.skillData.proficiency = 'Proficient'
-      }
+      this.skillData.proficiency = this.checkProficiency(this.skillData.progress);
       this.service.addSkill(this.skillData).subscribe((data: any)=>{
         this.goToSkillsPage(); 
       }, ()=>{
@@ -51,7 +43,22 @@ export class AddSkillComponent {
     }
   }
 
+  checkProficiency(data:any){
+    if(data>1 && data<50){
+      return 'Beginner'
+    }
+    else if(data>=50 && data<70){
+      return 'Knowledgeable'
+    }
+    else if(data>=70){
+      return 'Proficient'
+    }else{
+      return 'Beginner'
+    }
+  }
+
   goToSkillsPage() {
     this.router.navigate(['/technical-skills']);
   }
+
 }
