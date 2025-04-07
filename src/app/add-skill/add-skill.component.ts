@@ -43,17 +43,15 @@ export class AddSkillComponent {
     }
   }
 
-  checkProficiency(data:any){
-    if(data>1 && data<50){
-      return 'Beginner'
-    }
-    else if(data>=50 && data<70){
-      return 'Knowledgeable'
-    }
-    else if(data>=70){
-      return 'Proficient'
-    }else{
-      return 'Beginner'
+  checkProficiency(data: any) {
+    if (data >= 1 && data <= 50) {
+      return 'Beginner';
+    } else if (data > 50 && data < 70) {
+      return 'Knowledgeable';
+    } else if (data >= 70) {
+      return 'Proficient';
+    } else {
+      return 'Beginner';
     }
   }
 
